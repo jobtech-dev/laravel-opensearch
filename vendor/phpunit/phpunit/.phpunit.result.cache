@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Jobtech\\Support\\Opensearch\\Tests\\Unit\\Helpers\\PrefixHelperTest::testParseIndexConfigNull":8,"Jobtech\\Support\\Opensearch\\Tests\\Unit\\Config\\ConfigTest::testReturnIndices":8},"times":{"Jobtech\\Support\\Opensearch\\Tests\\Unit\\Config\\ConfigTest::testReturnIndices":0.029}}

@@ -1,0 +1,17 @@
+services:
+  jt-opensearch-support:
+    &jt-opensearch-support
+    platform: linux/arm64
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: jt-opensearch-support
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - .:/var/www/html
+
+# Volumes configuration
+volumes:
+  jt-opensearch-support:
+    driver: local
