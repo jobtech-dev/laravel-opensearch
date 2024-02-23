@@ -4,13 +4,13 @@
 Install the package in your application using composer
 
 ```shell
-composer require jobtech/jt-opensearch-support
+composer require jobtech/laravel-opensearch
 ```
 
 Publish vendor
 
 ```shell
-php artisan jt-opensearch:install
+php artisan laravel-opensearch:install
 ```
 
 ## Usage
@@ -27,22 +27,22 @@ Declare in opensearch.php file your index
 ```
 
 ---
-Che cosa deve fare il mio package Laravel?
+Which endpoints have been implemented:
 
 # Index
-    - creazione indice
-    - eliminazione indice
-    - apertura indice
-    - chiusura indice
-    - verifica esistenza indice
-    - aggiornamento `mappings` indice
-    - aggiornamento `settings` indice
+    - create index
+    - delete index
+    - open index
+    - close index
+    - index existence check
+    - update (put) `mappings` index
+    - update (put) `settings` index
 
 # Document
-    - creazione documento
-    - aggiornamento documento
-    - upsert documento
-    - eliminazione del documento
-    - count dei documenti
-    - ricerca senza paginazione
-    - ricerca con paginazione
+    - create document
+    - update document
+    - upsert document
+    - delete document
+    - count document
+    - search without pagination
+    - search with pagination
