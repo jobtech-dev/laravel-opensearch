@@ -1,14 +1,14 @@
 <?php
 
-namespace Jobtech\Support\Opensearch\Tests\Unit\Managers;
+namespace Jobtech\Support\OpenSearch\Tests\Unit\Managers;
 
 use OpenSearch\Client;
 use Mockery\MockInterface;
 use Illuminate\Support\Arr;
 use OpenSearch\Namespaces\IndicesNamespace;
-use Jobtech\Support\Opensearch\Tests\TestCase;
-use Jobtech\Support\Opensearch\Contracts\Index;
-use Jobtech\Support\Opensearch\Managers\Contracts\IndexManager;
+use Jobtech\Support\OpenSearch\Tests\TestCase;
+use Jobtech\Support\OpenSearch\Contracts\Index;
+use Jobtech\Support\OpenSearch\Managers\Contracts\IndexManager;
 
 /**
  * @internal

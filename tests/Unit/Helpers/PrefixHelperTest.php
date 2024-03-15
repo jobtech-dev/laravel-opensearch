@@ -1,11 +1,11 @@
 <?php
 
-namespace Jobtech\Support\Opensearch\Tests\Unit\Helpers;
+namespace Jobtech\Support\OpenSearch\Tests\Unit\Helpers;
 
 use Mockery\MockInterface;
-use Jobtech\Support\Opensearch\Tests\TestCase;
-use Jobtech\Support\Opensearch\Config\Contracts\Config;
-use Jobtech\Support\Opensearch\Helpers\Contracts\PrefixHelper;
+use Jobtech\Support\OpenSearch\Tests\TestCase;
+use Jobtech\Support\OpenSearch\Config\Contracts\Config;
+use Jobtech\Support\OpenSearch\Helpers\Contracts\PrefixHelper;
 
 /**
  * @internal

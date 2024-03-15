@@ -1,9 +1,9 @@
 <?php
 
-namespace Jobtech\Support\Opensearch\Tests;
+namespace Jobtech\Support\OpenSearch\Tests;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use Jobtech\Support\Opensearch\JtOpenSearchServiceProvider;
+use Jobtech\Support\OpenSearch\JtOpenSearchServiceProvider;
 
 /**
  * @internal

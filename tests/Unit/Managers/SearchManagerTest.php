@@ -1,11 +1,11 @@
 <?php
 
-namespace Jobtech\Support\Opensearch\Tests\Unit\Managers;
+namespace Jobtech\Support\OpenSearch\Tests\Unit\Managers;
 
 use OpenSearch\Client;
 use Mockery\MockInterface;
-use Jobtech\Support\Opensearch\Tests\TestCase;
-use Jobtech\Support\Opensearch\Managers\Contracts\SearchManager;
+use Jobtech\Support\OpenSearch\Tests\TestCase;
+use Jobtech\Support\OpenSearch\Managers\Contracts\SearchManager;
 
 /**
  * @internal
