@@ -3,7 +3,7 @@
 namespace Jobtech\Support\Opensearch\Tests;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use Jobtech\Support\Opensearch\JtOpensearchServiceProvider;
+use Jobtech\Support\Opensearch\JtOpenSearchServiceProvider;
 
 /**
  * @internal
@@ -18,7 +18,7 @@ class TestCase extends OrchestraTestCase
     protected function getPackageProviders($app): array
     {
         return [
-            JtOpensearchServiceProvider::class,
+            JtOpenSearchServiceProvider::class,
         ];
     }
 

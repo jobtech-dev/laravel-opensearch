@@ -8,7 +8,7 @@ use Illuminate\Support\Arr;
 use OpenSearch\Namespaces\IndicesNamespace;
 use Jobtech\Support\Opensearch\Tests\TestCase;
 use Jobtech\Support\Opensearch\Contracts\Index;
-use Jobtech\Support\Opensearch\Managers\Contracts\IndicesManager;
+use Jobtech\Support\Opensearch\Managers\Contracts\IndexManager;
 
 /**
  * @internal
@@ -51,8 +51,8 @@ class IndexManagerTest extends TestCase
             $mock->allows('indices')->once()->andReturn($indices);
         });
 
-        /** @var IndicesManager $manager */
-        $manager = $this->app->make(IndicesManager::class);
+        /** @var IndexManager $manager */
+        $manager = $this->app->make(IndexManager::class);
 
         $manager->existsIndex($index);
     }
@@ -97,8 +97,8 @@ class IndexManagerTest extends TestCase
             $mock->allows('indices')->once()->andReturn($indices);
         });
 
-        /** @var IndicesManager $manager */
-        $manager = $this->app->make(IndicesManager::class);
+        /** @var IndexManager $manager */
+        $manager = $this->app->make(IndexManager::class);
 
         $manager->createIndex($index);
     }
@@ -158,8 +158,8 @@ class IndexManagerTest extends TestCase
             $mock->allows('indices')->times(3)->andReturn($indices);
         });
 
-        /** @var IndicesManager $manager */
-        $manager = $this->app->make(IndicesManager::class);
+        /** @var IndexManager $manager */
+        $manager = $this->app->make(IndexManager::class);
 
         $manager->updateIndexSettings($index);
     }
@@ -219,8 +219,8 @@ class IndexManagerTest extends TestCase
             $mock->allows('indices')->times(3)->andReturn($indices);
         });
 
-        /** @var IndicesManager $manager */
-        $manager = $this->app->make(IndicesManager::class);
+        /** @var IndexManager $manager */
+        $manager = $this->app->make(IndexManager::class);
 
         $manager->updateIndexMappings($index);
     }
@@ -261,8 +261,8 @@ class IndexManagerTest extends TestCase
             $mock->allows('indices')->once()->andReturn($indices);
         });
 
-        /** @var IndicesManager $manager */
-        $manager = $this->app->make(IndicesManager::class);
+        /** @var IndexManager $manager */
+        $manager = $this->app->make(IndexManager::class);
 
         $manager->deleteIndex($index);
     }
@@ -311,8 +311,8 @@ class IndexManagerTest extends TestCase
             $mock->allows('indices')->once()->andReturn($indices);
         });
 
-        /** @var IndicesManager $manager */
-        $manager = $this->app->make(IndicesManager::class);
+        /** @var IndexManager $manager */
+        $manager = $this->app->make(IndexManager::class);
 
         $manager->openIndex($index);
     }
@@ -361,8 +361,8 @@ class IndexManagerTest extends TestCase
             $mock->allows('indices')->once()->andReturn($indices);
         });
 
-        /** @var IndicesManager $manager */
-        $manager = $this->app->make(IndicesManager::class);
+        /** @var IndexManager $manager */
+        $manager = $this->app->make(IndexManager::class);
 
         $manager->closeIndex($index);
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Jobtech\Support\Opensearch\Contracts;
+namespace Jobtech\Support\OpenSearch\Contracts;
 
 interface Index
 {

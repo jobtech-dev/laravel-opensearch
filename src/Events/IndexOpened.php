@@ -1,8 +1,8 @@
 <?php
 
-namespace Jobtech\Support\Opensearch\Events;
+namespace Jobtech\Support\OpenSearch\Events;
 
-use Jobtech\Support\Opensearch\Contracts\Index;
+use Jobtech\Support\OpenSearch\Contracts\Index;
 
 /** @codeCoverageIgnore */
 class IndexOpened

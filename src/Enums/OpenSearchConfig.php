@@ -1,8 +1,8 @@
 <?php
 
-namespace Jobtech\Support\Opensearch\Enums;
+namespace Jobtech\Support\OpenSearch\Enums;
 
-enum OpensearchConfig: string
+enum OpenSearchConfig: string
 {
     case INDICES_KEY = 'opensearch.indices';
 

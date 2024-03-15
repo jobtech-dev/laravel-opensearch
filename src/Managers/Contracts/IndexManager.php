@@ -1,10 +1,10 @@
 <?php
 
-namespace Jobtech\Support\Opensearch\Managers\Contracts;
+namespace Jobtech\Support\OpenSearch\Managers\Contracts;
 
-use Jobtech\Support\Opensearch\Contracts\Index;
+use Jobtech\Support\OpenSearch\Contracts\Index;
 
-interface IndicesManager
+interface IndexManager
 {
     public function existsIndex(Index $index): bool;
 
@@ -12,9 +12,9 @@ interface IndicesManager
 
     public function createIndex(Index $index): array;
 
-    public function updateIndexSettings(Index $index): array;
+    public function putIndexSettings(Index $index): array;
 
-    public function updateIndexMappings(Index $index): array;
+    public function putIndexMappings(Index $index): array;
 
     public function deleteIndex(Index $index): array;
 

@@ -1,6 +1,6 @@
 {
     "name": "jobtech/jt-opensearch-support",
-    "description": "Jobtech Opensearch Support",
+    "description": "Jobtech OpenSearch Support",
     "keywords": [
         "jobtech",
         "jt-opensearch-support"
@@ -9,12 +9,12 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Jobtech\\Support\\Opensearch\\": "src"
+            "Jobtech\\Support\\OpenSearch\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Jobtech\\Support\\Opensearch\\Tests\\": "tests"
+            "Jobtech\\Support\\OpenSearch\\Tests\\": "tests"
         }
     },
     "authors": [
@@ -30,6 +30,10 @@
         "phpunit/phpunit": "^10.5",
         "friendsofphp/php-cs-fixer": "^3.49"
     },
+    "scripts": {
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
     "require": {
         "illuminate/support": "^10.43",
         "opensearch-project/opensearch-php": "^2.2"
@@ -37,7 +41,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Jobtech\\Support\\Opensearch\\JtOpensearchServiceProvider"
+                "Jobtech\\Support\\OpenSearch\\JtOpenSearchServiceProvider"
             ]
         }
     }

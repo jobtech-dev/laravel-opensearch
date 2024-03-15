@@ -1,16 +1,16 @@
 <?php
 
-namespace Jobtech\Support\Opensearch\Managers;
+namespace Jobtech\Support\OpenSearch\Managers;
 
 use OpenSearch\Client;
 use Illuminate\Support\Arr;
-use Jobtech\Support\Opensearch\Contracts\Index;
-use Jobtech\Support\Opensearch\Events\IndexClosed;
-use Jobtech\Support\Opensearch\Events\IndexOpened;
-use Jobtech\Support\Opensearch\Helpers\Contracts\PrefixHelper;
-use Jobtech\Support\Opensearch\Managers\Contracts\IndicesManager as IndicesManagerContract;
+use Jobtech\Support\OpenSearch\Contracts\Index;
+use Jobtech\Support\OpenSearch\Events\IndexClosed;
+use Jobtech\Support\OpenSearch\Events\IndexOpened;
+use Jobtech\Support\OpenSearch\Helpers\Contracts\PrefixHelper;
+use Jobtech\Support\OpenSearch\Managers\Contracts\IndexManager as IndexManagerContract;
 
-class IndicesManager implements IndicesManagerContract
+class IndexManager implements IndexManagerContract
 {
     public function __construct(
         private readonly Client $client,
@@ -45,7 +45,7 @@ class IndicesManager implements IndicesManagerContract
         ]);
     }
 
-    public function updateIndexSettings(Index $index): array
+    public function putIndexSettings(Index $index): array
     {
         return $this->closeOpenCallback($index, fn (Index $index) => $this->client->indices()->putSettings([
             'index' => $this->prefixHelper->parseIndex($index->name()),
@@ -53,7 +53,7 @@ class IndicesManager implements IndicesManagerContract
         ]));
     }
 
-    public function updateIndexMappings(Index $index): array
+    public function putIndexMappings(Index $index): array
     {
         return $this->closeOpenCallback($index, fn (Index $index) => $this->client->indices()->putMapping([
             'index' => $this->prefixHelper->parseIndex($index->name()),
@@ -94,7 +94,7 @@ class IndicesManager implements IndicesManagerContract
         return $response;
     }
 
-    private function closeOpenCallback(Index $index, \Closure $closure): array
+    public function closeOpenCallback(Index $index, \Closure $closure): array
     {
         $this->closeIndex($index);
 

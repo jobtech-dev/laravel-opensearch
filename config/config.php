@@ -1,21 +1,38 @@
 <?php
 
 return [
+    /*
+    |--------------------------------------------------------------------------
+    | Client config
+    |--------------------------------------------------------------------------
+    |
+    | This is where client configurations are set up
+    |
+    */
     'client' => [
         'hosts' => [
-            'host' => env('OPENSEARCH_HOST', 'opensearch:9200'),
+            'host' => env('OPENSEARCH_HOST'),
         ],
-        'basicAuthentication' => [env('OPENSEARCH_USER', 'opensearch'), env('OPENSEARCH_SECRET')],
+        'basicAuthentication' => [env('OPENSEARCH_USER'), env('OPENSEARCH_SECRET')],
     ],
 
-    'indices' => [
-        // put list of index of opensearch microservices
-    ],
+    /*
+    |--------------------------------------------------------------------------
+    | Indices config
+    |--------------------------------------------------------------------------
+    |
+    | Put OpenSearch indices here
+    |
+    */
+    'indices' => [],
 
-    'queue' => [
-        'connection' => env('OPENSEARCH_QUEUE_CONNECTION', env('QUEUE_CONNECTION', 'sync')),
-        'queue' => env('OPENSEARCH_QUEUE', env('QUEUE_DEFAULT')),
-    ],
-
+    /*
+    |--------------------------------------------------------------------------
+    | Indices prefix
+    |--------------------------------------------------------------------------
+    |
+    | Enter the OpenSearch prefix if you want indexes to have a specific prefix
+    |
+    */
     'prefix' => env('OPENSEARCH_PREFIX'),
 ];

@@ -1,10 +1,10 @@
 <?php
 
-namespace Jobtech\Support\Opensearch\Managers;
+namespace Jobtech\Support\OpenSearch\Managers;
 
 use OpenSearch\Client;
-use Jobtech\Support\Opensearch\Helpers\Contracts\PrefixHelper;
-use Jobtech\Support\Opensearch\Managers\Contracts\SearchManager as SearchManagerContract;
+use Jobtech\Support\OpenSearch\Helpers\Contracts\PrefixHelper;
+use Jobtech\Support\OpenSearch\Managers\Contracts\SearchManager as SearchManagerContract;
 
 class SearchManager implements SearchManagerContract
 {

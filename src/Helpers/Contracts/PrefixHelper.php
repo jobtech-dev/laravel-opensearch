@@ -1,6 +1,6 @@
 <?php
 
-namespace Jobtech\Support\Opensearch\Helpers\Contracts;
+namespace Jobtech\Support\OpenSearch\Helpers\Contracts;
 
 interface PrefixHelper
 {

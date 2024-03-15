@@ -1,6 +1,6 @@
 <?php
 
-namespace Jobtech\Support\Opensearch\Managers\Contracts;
+namespace Jobtech\Support\OpenSearch\Managers\Contracts;
 
 interface SearchManager
 {

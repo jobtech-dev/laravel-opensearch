@@ -1,8 +1,8 @@
 <?php
 
-namespace Jobtech\Support\Opensearch\Config\Contracts;
+namespace Jobtech\Support\OpenSearch\Config\Contracts;
 
-use Jobtech\Support\Opensearch\Contracts\Index;
+use Jobtech\Support\OpenSearch\Contracts\Index;
 
 interface Config
 {

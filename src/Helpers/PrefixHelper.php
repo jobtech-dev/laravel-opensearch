@@ -1,9 +1,9 @@
 <?php
 
-namespace Jobtech\Support\Opensearch\Helpers;
+namespace Jobtech\Support\OpenSearch\Helpers;
 
-use Jobtech\Support\Opensearch\Config\Contracts\Config;
-use Jobtech\Support\Opensearch\Helpers\Contracts\PrefixHelper as PrefixHelperContract;
+use Jobtech\Support\OpenSearch\Config\Contracts\Config;
+use Jobtech\Support\OpenSearch\Helpers\Contracts\PrefixHelper as PrefixHelperContract;
 
 class PrefixHelper implements PrefixHelperContract
 {
