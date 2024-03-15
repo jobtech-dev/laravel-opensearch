@@ -7,12 +7,6 @@
 </p>
 
 # Jobtech OpenSearch Support
-
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/jobtech/jt-opensearch-support.svg?style=flat-square)](https://packagist.org/packages/jobtech/jt-opensearch-support)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/jobtech/jt-opensearch-support/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/jobtech/jt-opensearch-support/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jobtech/jt-opensearch-support/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/jobtech/jt-opensearch-support/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/jobtech/jt-opensearch-support.svg?style=flat-square)](https://packagist.org/packages/jobtech/jt-opensearch-support)
-
 This package makes it easy to communicate with OpenSearch
 
 ## Installation
@@ -221,27 +215,21 @@ $search = SearchManager::searchWithPagination('index', 1, 10) // return OpenSear
 ```
 
 ## Testing
-
 ```bash
 composer test
 ```
 
 ## Changelog
-
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
 ## Contributing
-
-Please see [CONTRIBUTING](https://github.com/jobtech/.github/blob/main/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
-
-Please review [our security policy](https://github.com/jobtech/.github/security/policy) on how to report security vulnerabilities.
+Please review [SECURITY](SECURITY.md) on how to report security vulnerabilities.
 
 ## Credits
-
 - [Alessandro Romano](https://github.com/Dasheel)
 
 ## License
-
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
