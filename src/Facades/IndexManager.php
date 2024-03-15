@@ -9,6 +9,6 @@ class IndexManager extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return IndexManagerContract::class;
+        return 'open-search-index-manager';
     }
 }

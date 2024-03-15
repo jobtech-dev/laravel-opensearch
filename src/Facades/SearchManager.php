@@ -9,6 +9,6 @@ class SearchManager extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return SearchManagerContract::class;
+        return 'open-search-search-manager';
     }
 }

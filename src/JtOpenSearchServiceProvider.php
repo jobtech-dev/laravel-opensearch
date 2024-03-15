@@ -39,9 +39,9 @@ class JtOpenSearchServiceProvider extends Provider
     ];
 
     private array $bindingFacades = [
-        DocumentManagerContract::class => DocumentManagerFacade::class,
-        IndexManagerContract::class => IndexManagerFacade::class,
-        SearchManagerContract::class => SearchManagerFacade::class,
+        'open-search-document-manager' => DocumentManagerFacade::class,
+        'open-search-index-manager' => IndexManagerFacade::class,
+        'open-search-search-manager' => SearchManagerFacade::class,
     ];
 
     public function register()

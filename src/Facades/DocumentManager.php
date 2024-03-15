@@ -9,6 +9,6 @@ class DocumentManager extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return DocumentManagerContract::class;
+        return 'open-search-document-manager';
     }
 }

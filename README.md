@@ -101,75 +101,75 @@ The prefix is then handled automatically by the package.
 ### existsIndex
 Returns whether or not an index already exists.
 ```php
-$bool = IndexManager::existsIndex($index) // return OpenSearch response
+$bool = \Jobtech\Support\OpenSearch\Facades\IndexManager::existsIndex($index) // return OpenSearch response
 ```
 
 ### getIndex
 This operation returns information on an index.
 ```php
-$array = IndexManager::getIndex($index) // return OpenSearch response
+$array = \Jobtech\Support\OpenSearch\Facades\IndexManager::getIndex($index) // return OpenSearch response
 ```
 
 ### createIndex
 An empty index can be created for later use.
 When creating an index, it is possible to specify its mappings, settings and aliases.
 ```php
-$array = IndexManager::createIndex($index) // return OpenSearch response
+$array = \Jobtech\Support\OpenSearch\Facades\IndexManager::createIndex($index) // return OpenSearch response
 ```
 
 ### putIndexSettings
 Index-level settings can be updated. Dynamic index settings can be changed at any time, whereas static settings cannot be changed after the index has been created.
 ```php
-$array = IndexManager::putIndexSettings($index) // return OpenSearch response
+$array = \Jobtech\Support\OpenSearch\Facades\IndexManager::putIndexSettings($index) // return OpenSearch response
 ```
 
 ### putIndexMappings
 It is possible to create or add mappings and fields to an index.
 This operation cannot be used to update mappings that already correspond to existing data in the index.
 ```php
-$array = IndexManager::putIndexMappings($index) // return OpenSearch response
+$array = \Jobtech\Support\OpenSearch\Facades\IndexManager::putIndexMappings($index) // return OpenSearch response
 ```
 
 ### deleteIndex
 This operation delete an index.
 ```php
-$array = IndexManager::deleteIndex($index) // return OpenSearch response
+$array = \Jobtech\Support\OpenSearch\Facades\IndexManager::deleteIndex($index) // return OpenSearch response
 ```
 
 ### openIndex
 A closed index can be opened, allowing data to be added or searched within the index.
 ```php
-$array = IndexManager::openIndex($index) // return OpenSearch response
+$array = \Jobtech\Support\OpenSearch\Facades\IndexManager::openIndex($index) // return OpenSearch response
 ```
 
 ### closeIndex
 This operation closes an index. Once an index is closed, it is no longer possible to add data to it or search for data within the index.
 ```php
-$array = IndexManager::closeIndex($index) // return OpenSearch response
+$array = \Jobtech\Support\OpenSearch\Facades\IndexManager::closeIndex($index) // return OpenSearch response
 ```
 
 ### retrieveDocument
 This api permit to retrieve a document with information and data, from index with specified id.
 ```php
-$document = DocumentManager::retrieveDocument('index', 'id') // return OpenSearch response
+$document = \Jobtech\Support\OpenSearch\Facades\DocumentManager::retrieveDocument('index', 'id') // return OpenSearch response
 ```
 
 ### createDocument
 It allows a document to be created with its data and a specific id.
 ```php
-$array = DocumentManager::createDocument('index', 'id', ['']) // return OpenSearch response
+$array = \Jobtech\Support\OpenSearch\Facades\DocumentManager::createDocument('index', 'id', ['']) // return OpenSearch response
 ```
 
 ### createDocumentWithoutId
 It allows a document to be created with its data and without a specific id.
 ```php
-$array = DocumentManager::createDocumentWithoutId('index', ['']) // return OpenSearch response
+$array = \Jobtech\Support\OpenSearch\Facades\DocumentManager::createDocumentWithoutId('index', ['']) // return OpenSearch response
 ```
 
 ### createDocumentFrom
 Allows you to create a document from an array of specific parameters.,
 ```php
-$array = DocumentManager::createDocumentFrom([
+$array = \Jobtech\Support\OpenSearch\Facades\DocumentManager::createDocumentFrom([
     'index' => 'index',
     'id' => 'id',
     'body' => [''],
@@ -180,38 +180,38 @@ $array = DocumentManager::createDocumentFrom([
 ### updateDocument
 It is possible to update the fields of a document in a specific index. Is it possible specify new data to be included in the index.
 ```php
-$array = DocumentManager::updateDocument('index', 'id', ['']) // return OpenSearch response
+$array = \Jobtech\Support\OpenSearch\Facades\DocumentManager::updateDocument('index', 'id', ['']) // return OpenSearch response
 ```
 
 ### upsertDocument
 Upsert is an operation that conditionally either updates an existing document or inserts a new one based on information in the object.
 ```php
-$array = DocumentManager::upsertDocument('index', 'id', ['']) // return OpenSearch response
+$array = \Jobtech\Support\OpenSearch\Facades\DocumentManager::upsertDocument('index', 'id', ['']) // return OpenSearch response
 ```
 
 ### deleteDocument
 This operation delete a document.
 ```php
-$array = DocumentManager::deleteDocument('index', 'id') // return OpenSearch response
+$array = \Jobtech\Support\OpenSearch\Facades\DocumentManager::deleteDocument('index', 'id') // return OpenSearch response
 ```
 
 ### countDocument
 Returns how many document there are in the index.
 ```php
-$count = DocumentManager::countDocument('index') // return OpenSearch response
+$count = \Jobtech\Support\OpenSearch\Facades\DocumentManager::countDocument('index') // return OpenSearch response
 ```
 
 ### search
 Allows a search request to be made to search for data in the cluster according to the required parameters.
 ```php
-$search = SearchManager::search('index') // return OpenSearch response
+$search = \Jobtech\Support\OpenSearch\Facades\SearchManager::search('index') // return OpenSearch response
 ```
 
 ### searchWithPagination
 Allows a search request to be made to search for data in the cluster according to the required parameters.
 Everything is returned with a pagination.
 ```php
-$search = SearchManager::searchWithPagination('index', 1, 10) // return OpenSearch response
+$search = \Jobtech\Support\OpenSearch\Facades\SearchManager::searchWithPagination('index', 1, 10) // return OpenSearch response
 ```
 
 ## Testing

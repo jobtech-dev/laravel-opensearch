@@ -161,7 +161,7 @@ class IndexManagerTest extends TestCase
         /** @var IndexManager $manager */
         $manager = $this->app->make(IndexManager::class);
 
-        $manager->updateIndexSettings($index);
+        $manager->putIndexSettings($index);
     }
 
     public function testUpdateIndexMappings(): void
@@ -222,7 +222,7 @@ class IndexManagerTest extends TestCase
         /** @var IndexManager $manager */
         $manager = $this->app->make(IndexManager::class);
 
-        $manager->updateIndexMappings($index);
+        $manager->putIndexMappings($index);
     }
 
     public function testDeleteIndex(): void
