@@ -6,3 +6,4 @@ vendor
 .idea
 .env
 !phpunit.xml.dist
+xdebug-mac.ini
