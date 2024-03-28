@@ -1,0 +1,9 @@
+services:
+  jt-opensearch-support:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: jt-opensearch-support
+    restart: unless-stopped
+    volumes:
+      - .:/var/www/html

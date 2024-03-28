@@ -1,0 +1,48 @@
+{
+    "name": "jobtech/jt-opensearch-support",
+    "description": "Jobtech OpenSearch Support",
+    "keywords": [
+        "jobtech",
+        "jt-opensearch-support"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Jobtech\\Support\\OpenSearch\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jobtech\\Support\\OpenSearch\\Tests\\": "tests"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alessandro Romano",
+            "email": "alessandro.romano@jobtech.it",
+            "role": "Backend Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "orchestra/testbench": "^8.21",
+        "phpunit/phpunit": "^10.5",
+        "friendsofphp/php-cs-fixer": "^3.49"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "require": {
+        "illuminate/support": "^10.43",
+        "opensearch-project/opensearch-php": "^2.2"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jobtech\\Support\\OpenSearch\\JtOpenSearchServiceProvider"
+            ]
+        }
+    }
+}
