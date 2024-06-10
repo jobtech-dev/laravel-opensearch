@@ -35,7 +35,7 @@
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
     "require": {
-        "illuminate/support": "^10.43",
+        "illuminate/support": "^10.0",
         "opensearch-project/opensearch-php": "^2.2"
     },
     "extra": {
