@@ -14,9 +14,6 @@ use Jobtech\Support\OpenSearch\Managers\SearchManager;
 use Jobtech\Support\OpenSearch\Managers\DocumentManager;
 use Jobtech\Support\OpenSearch\Contracts\Index as IndexContract;
 use Jobtech\Support\OpenSearch\Config\Contracts\Config as ConfigContract;
-use Jobtech\Support\OpenSearch\Facades\IndexManager as IndexManagerFacade;
-use Jobtech\Support\OpenSearch\Facades\SearchManager as SearchManagerFacade;
-use Jobtech\Support\OpenSearch\Facades\DocumentManager as DocumentManagerFacade;
 use Jobtech\Support\OpenSearch\Helpers\Contracts\PrefixHelper as PrefixHelperContract;
 use Jobtech\Support\OpenSearch\Managers\Contracts\IndexManager as IndexManagerContract;
 use Jobtech\Support\OpenSearch\Managers\Contracts\SearchManager as SearchManagerContract;
@@ -39,9 +36,9 @@ class JtOpenSearchServiceProvider extends Provider
     ];
 
     private array $bindingFacades = [
-        'open-search-document-manager' => DocumentManagerFacade::class,
-        'open-search-index-manager' => IndexManagerFacade::class,
-        'open-search-search-manager' => SearchManagerFacade::class,
+        'open-search-document-manager' => DocumentManagerContract::class,
+        'open-search-index-manager' => IndexManagerContract::class,
+        'open-search-search-manager' => SearchManagerContract::class,
     ];
 
     public function register()
