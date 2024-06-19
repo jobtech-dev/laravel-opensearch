@@ -95,7 +95,7 @@ class DocumentManagerTest extends TestCase
                 '_id' => 'bar',
                 '_version' => 1,
                 'result' => 'created',
-                '_shard' => [
+                '_shards' => [
                     'total' => 2,
                     'successful' => 1,
                     'failed' => 0,
@@ -125,7 +125,7 @@ class DocumentManagerTest extends TestCase
                 '_id' => 'id_created',
                 '_version' => 1,
                 'result' => 'created',
-                '_shard' => [
+                '_shards' => [
                     'total' => 2,
                     'successful' => 1,
                     'failed' => 0,
@@ -156,7 +156,7 @@ class DocumentManagerTest extends TestCase
                 '_id' => 'bar',
                 '_version' => 1,
                 'result' => 'created',
-                '_shard' => [
+                '_shards' => [
                     'total' => 2,
                     'successful' => 1,
                     'failed' => 0,
@@ -187,7 +187,7 @@ class DocumentManagerTest extends TestCase
                 '_id' => 'bar',
                 '_version' => 2,
                 'result' => 'updated',
-                '_shard' => [
+                '_shards' => [
                     'total' => 2,
                     'successful' => 1,
                     'failed' => 0,
@@ -221,7 +221,7 @@ class DocumentManagerTest extends TestCase
                 '_id' => 'bar',
                 '_version' => 3,
                 'result' => 'updated',
-                '_shard' => [
+                '_shards' => [
                     'total' => 2,
                     'successful' => 1,
                     'failed' => 0,
@@ -250,7 +250,7 @@ class DocumentManagerTest extends TestCase
                 '_id' => 'bar',
                 '_version' => 3,
                 'result' => 'deleted',
-                '_shard' => [
+                '_shards' => [
                     'total' => 2,
                     'successful' => 1,
                     'failed' => 0,
